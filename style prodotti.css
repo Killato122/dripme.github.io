@@ -1,0 +1,228 @@
+/* Generale */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display";
+    background-color: #f8f4ec;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+    display: block; /* Corretto da position: block; */
+    padding-bottom: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+/* Menu */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+}
+
+/* Container della maglia */
+.maglia-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Immagine maglia */
+.maglia {
+    width: 80%;
+    height: auto;
+    max-width: 700px;
+}
+
+/* Testo della maglia */
+.testo_maglia, .prezzo_maglia {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.prezzo_maglia {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Effetto zoom solo su desktop */
+@media (min-width: 768px) {
+    .maglia-container:hover .maglia {
+        cursor: zoom-in;
+    }
+}
+
+/* Lente d'ingrandimento */
+.lente {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: none;
+    z-index: 10;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+
+/* Lightbox per dispositivi mobili */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    display: block;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+footer h2 {
+    margin-top: 5px;
+}
+
+/* Footer - contatti */
+#contatti {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Contenitore principale del footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Blocchi email/telefono */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Icona Instagram */
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query per mobile */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+
+    .maglia {
+        width: 100%;
+    }
+
+    .menu-icon {
+        visibility: hidden;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info {
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        .main {
+            flex: 1;
+        }
+    
+        footer {
+            margin-top: auto; /* Fa sì che il footer si attacchi in basso */
+        }
+    }
+    
+
+}
