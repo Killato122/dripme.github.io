@@ -3,64 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DripMe è un brand di abbigliamento streetwear che unisce innovazione e creatività. Scopri le nostre collezioni e ridefinisci il tuo stile.">
+    <meta name="description" content="DripMe &egrave; il brand streetwear che mixa arte digitale, cultura club e sartorialit&agrave; italiana. Drop limitati, energia urbana.">
     <meta name="keywords" content="DripMe, streetwear, moda, t-shirt, abbigliamento urbano, fashion, brand emergente">
     <meta name="author" content="DripMe">
     <meta property="og:title" content="DripMe - Abbigliamento Streetwear">
-    <meta property="og:description" content="Scopri DripMe, il brand che ridefinisce la moda streetwear con design audaci e unici.">
+    <meta property="og:description" content="Scopri DripMe, il brand che ridefinisce la moda streetwear con design audaci e visioni new wave.">
     <meta property="og:image" content="immagini/logo.jpg">
     <meta property="og:url" content="https://dripme.netlify.app">
     <meta name="twitter:card" content="summary_large_image">
-    
-    <title>DripMe - Homepage</title>
+    <meta name="theme-color" content="#070707">
+
+    <title>DripMe - Street Couture</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap">
 </head>
 <body>
+    <div class="bg-gradient"></div>
+    <div class="bg-noise"></div>
     <div class="wrapper">
-        <!-- Logo e menu -->
-        <header>
-            <img class="logo" src="immagini/dripme%20def.png" alt="DripMe - Abbigliamento Streetwear">
-            <a href="pagina prodotti.html">
-                <div class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
+        <header class="nav">
+            <div class="logo-block">
+                <img class="logo" src="immagini/dripme%20def.png" alt="DripMe - Abbigliamento Streetwear">
+                <span class="logo-tagline">Milano / Underground Lab</span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <nav class="main-nav">
+                    <a href="#drop">Drop 002</a>
+                    <a href="#manifesto">Manifesto</a>
+                    <a href="#community">Community</a>
+                </nav>
+                <a href="pagina prodotti.html" class="pill-link">
+                    Catalogo
+                    <span aria-hidden="true">&#8599;</span>
+                </a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Apri menu" aria-controls="nav-links" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
         </header>
 
-        <div class="paragrafo">
-            <p>Dripme è il brand di abbigliamento che ridefinisce il concetto di moda street con un tocco di innovazione e creatività. Ispirato dalla cultura metropolitana e dalle tendenze new wave, il nostro stile si distingue per design audaci e dettagli unici che catturano l'attenzione.</p>
-            <p>Dripme non è solo un brand, è un movimento. È per chi vive la città come una tela su cui esprimere se stesso, per chi cerca di rompere gli schemi e di raccontare la propria storia attraverso la moda. Unisciti a noi e scopri come abbracciare la tua autenticità con capi che parlano di te.</p>
-        </div>
+        <div class="menu-overlay" aria-hidden="true"></div>
 
-        <!-- Sezione principale con layout immagini -->
-        <section class="main">
-            <div class="images-container">
-                <a href="pagina maglia 1.html"><div class="image-item"><img src="immagini/maglia dollaro ghiaccio.png" alt="Maglia 1"></div></a>
-                <a href="pagina maglia 2.html"><div class="image-item center"><img src="immagini/maglia teschio.png" alt="Maglia 2"></div></a>
-                <a href="pagina maglia 3.html"><div class="image-item"><img src="immagini/maglia dollaro fuoco.png" alt="Maglia 3"></div></a>
-            </div>
-        </section>
-
-        <!-- Sezione contatti -->
-        <footer id="contatti">
-            <h2>Contatti</h2>
-            <div class="footer-container">
-                <div class="footer-info">
-                    <a href="mailto:dripmelife@gmail.com">✉️ dripmelife@gmail.com</a>
-                    <a href="tel:+393450979784">📞 +39 345 097 9784</a>
+        <main>
+            <section class="hero" id="home">
+                <div class="floating-pill">Drop 002 &middot; Neon Mirage</div>
+                <div class="hero-content">
+                    <p class="eyebrow">Limited pieces / 150 unit&agrave; per grafica</p>
+                    <h1>Street couture scolpita dalla notte.</h1>
+                    <p class="hero-text">
+                        DripMe nasce tra Milano e la periferia digitale. Mischiamo stampa tattile, grafica glitch e tessuti premium
+                        per capi che amplificano la tua presenza. Ogni drop &egrave; numerato, ogni dettaglio &egrave; pensato per chi vive la citt&agrave; come un live set.
+                    </p>
+                    <div class="cta-group">
+                        <a class="btn primary" href="pagina prodotti.html">Shop the drop</a>
+                        <a class="btn secondary" href="#manifesto">Leggi il manifesto</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">48h</span>
+                            <span class="stat-label">Life del drop</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+12k</span>
+                            <span class="stat-label">Crew worldwide</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Cotone heavy</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/_dripme_" target="_blank">
-                        <img src="immagini/instagram icon.png" alt="Instagram">
+                <div class="hero-gallery">
+                    <a class="hero-card" href="pagina maglia 1.html">
+                        <img src="immagini/maglia dollaro ghiaccio.png" alt="Maglia Icebound Dollar">
+                        <div class="card-info">
+                            <p>Icebound Dollar Tee</p>
+                            <span>&euro;65 &middot; limited 50</span>
+                        </div>
+                    </a>
+                    <a class="hero-card" href="pagina maglia 2.html">
+                        <img src="immagini/maglia teschio.png" alt="Maglia Skull Frequency">
+                        <div class="card-info">
+                            <p>Skull Frequency</p>
+                            <span>&euro;60 &middot; glow ink</span>
+                        </div>
+                    </a>
+                    <a class="hero-card" href="pagina maglia 3.html">
+                        <img src="immagini/maglia dollaro fuoco.png" alt="Maglia Molten Dollar">
+                        <div class="card-info">
+                            <p>Molten Dollar</p>
+                            <span>&euro;65 &middot; hand printed</span>
+                        </div>
                     </a>
                 </div>
+            </section>
+
+            <section class="marquee">
+                <div class="marquee-track">
+                    <span>DRIPME STREET LAB</span>
+                    <span>DROP 002 &middot; NEON MIRAGE</span>
+                    <span>NO RULES ONLY VIBES</span>
+                    <span>DRIPME STREET LAB</span>
+                    <span>DROP 002 &middot; NEON MIRAGE</span>
+                    <span>NO RULES ONLY VIBES</span>
+                </div>
+            </section>
+
+            <section class="manifesto" id="manifesto">
+                <div class="section-header">
+                    <p class="eyebrow">Manifesto</p>
+                    <h2>Non facciamo moda, costruiamo momenti.</h2>
+                    <p>Stampa a basso impatto, filiera locale e contaminazione creativa con producer, skater e visual artist.</p>
+                </div>
+                <div class="manifesto-grid">
+                    <div class="founder-copy">
+                        <p>
+                            Dripme &egrave; il brand di abbigliamento che ridefinisce il concetto di moda street con un tocco di innovazione e creativit&agrave;.
+                            Ispirato dalla cultura metropolitana e dalle tendenze new wave, il nostro stile si distingue per design audaci e dettagli unici che catturano l'attenzione.
+                        </p>
+                        <p>
+                            Dripme non &egrave; solo un brand, &egrave; un movimento. &Egrave; per chi vive la citt&agrave; come una tela su cui esprimere se stesso,
+                            per chi cerca di rompere gli schemi e di raccontare la propria storia attraverso la moda. Unisciti a noi e scopri come abbracciare la tua autenticit&agrave;
+                            con capi che parlano di te.
+                        </p>
+                    </div>
+                    <ul class="values">
+                        <li>Drop numerati e certificati.</li>
+                        <li>Tessuti premium 280 gsm, fit oversize.</li>
+                        <li>Packaging riutilizzabile in Tyvek.</li>
+                        <li>Collaborazioni con artisti emergenti.</li>
+                    </ul>
+                    <div class="badge-card">
+                        <p>"Se la strada &egrave; il nostro palco, i capi sono la voce."</p>
+                        <span>- DripMe Creative Unit</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="drop-grid" id="drop">
+                <div class="section-header">
+                    <p class="eyebrow">Featured drop</p>
+                    <h2>Selezione rapida.</h2>
+                    <a href="pagina prodotti.html" class="arrow-link">Vedi tutto <span aria-hidden="true">&rarr;</span></a>
+                </div>
+                <div class="products">
+                    <a class="product-card" href="pagina maglia 1.html">
+                        <div class="card-top">
+                            <span class="pill">Frost</span>
+                            <span class="number">01</span>
+                        </div>
+                        <img src="immagini/maglia dollaro ghiaccio.png" alt="Icebound Dollar Tee">
+                        <div class="product-info">
+                            <h3>Icebound Dollar Tee</h3>
+                            <p>Inchiostri termocromatici e glow-in-the-dark.</p>
+                        </div>
+                    </a>
+                    <a class="product-card" href="pagina maglia 2.html">
+                        <div class="card-top">
+                            <span class="pill">Signal</span>
+                            <span class="number">02</span>
+                        </div>
+                        <img src="immagini/maglia teschio.png" alt="Skull Frequency Tee">
+                        <div class="product-info">
+                            <h3>Skull Frequency</h3>
+                            <p>Grafica 3D ispirata alle onde sonore del club.</p>
+                        </div>
+                    </a>
+                    <a class="product-card" href="pagina maglia 3.html">
+                        <div class="card-top">
+                            <span class="pill">Heat</span>
+                            <span class="number">03</span>
+                        </div>
+                        <img src="immagini/maglia dollaro fuoco.png" alt="Molten Dollar Tee">
+                        <div class="product-info">
+                            <h3>Molten Dollar</h3>
+                            <p>Stampa serigrafica multistrato + foil a caldo.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="community" id="community">
+                <div class="community-card">
+                    <p class="eyebrow">Stay synced</p>
+                    <h2>Unisciti alla crew privata e ricevi accesso anticipato, playlist e pop-up segreti.</h2>
+                    <p>
+                        Non spam, solo vibrazioni reali. Eventi in rooftop, contest grafici, talk con i nostri designer e
+                        promozioni lampo durante i drop.
+                    </p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="la-tua@email.com" aria-label="Inserisci la tua email">
+                        <button type="button">Pingami</button>
+                    </div>
+                </div>
+                <div class="community-stats">
+                    <div>
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">pop-up cities</span>
+                    </div>
+                    <div>
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">support crew</span>
+                    </div>
+                    <div>
+                        <span class="stat-number">03</span>
+                        <span class="stat-label">collab in arrivo</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contatti">
+            <div class="footer-content">
+                <div>
+                    <h3>Contatti</h3>
+                    <a href="mailto:dripmelife@gmail.com">dripmelife@gmail.com</a>
+                    <a href="tel:+393450979784">+39 345 097 9784</a>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <a href="https://www.instagram.com/_dripme_" target="_blank" rel="noreferrer">Instagram</a>
+                </div>
+                <div>
+                    <h3>HQ</h3>
+                    <p>Milano &middot; Worldwide shipping</p>
+                </div>
             </div>
+            <p class="footer-note">&copy; <span id="year"></span> DripMe &middot; All city, no limits.</p>
         </footer>
     </div>
+    <script>
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+
+        if (menuToggle && navLinks) {
+            const closeMenu = () => {
+                document.body.classList.remove("menu-open");
+                menuToggle.setAttribute("aria-expanded", "false");
+            };
+
+            menuToggle.addEventListener("click", () => {
+                const isOpen = document.body.classList.toggle("menu-open");
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+            });
+
+            navLinks.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", closeMenu);
+            });
+
+            if (overlay) {
+                overlay.addEventListener("click", closeMenu);
+            }
+        }
+    </script>
 </body>
 </html>
